@@ -1,28 +1,27 @@
+//Ciclo for
 
-let i = 0;
-while (i < 10) {
-    
-    i ++;
+let array = [1,2,3,4,5,6,7,8,9];
 
-    //Cuando i toma el valor de 5 no se ejecutan las lineas siguientes sino que continua con la siguiente iteración del ciclo while.
-    if (i === 5){
+for (let i = 0; i < array.length; i++) {
+
+    if (array[i] === 7){
         continue;
     }
 
-    console.log(`El valor de i es: ${i}`);
-
+    console.log(`El valor de i en el array es: ${array[i]}`);
+    
 }
 
-let j = 0;
+//Foreach para recorrer un arreglo
+array.forEach(function(valor){
 
-while (j < 10) {
+    console.log(`El valor es: ${valor}`)
+})
 
-    j++;
+//some() comprueba si algún elemento del array pasa una prueba (proporcionado como una función).
+array.some(function(index,value){
+    console.log(index,value);
 
-    //Cuando j toma el valor 5 se ejecuta un break que interrumpe la continuidad del ciclo.
-    if (j == 5){
-        break;
-    }
-
-    console.log(`El valor de j es: ${j}`);
-}
+    //Ya que el ciclo foreach no permite utilizar el statement break, podemos usar en su lugar el metodo some
+    return index === 3; 
+})
