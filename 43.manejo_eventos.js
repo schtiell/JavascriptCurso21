@@ -30,6 +30,7 @@ function onMouseOut(){
     console.log('El mouse entra y sale del textbox');
 }
 
+//addEventListener() Registra un evento a un objeto en específico.
 var objeto = document.getElementById('objEvento');
 
 function msjEnConsola(){
@@ -37,13 +38,14 @@ function msjEnConsola(){
     console.log('Se disparó el evento click');
 }
 
-//addEventListener() Registra un evento a un objeto en específico.
 objeto.addEventListener("click",msjEnConsola);
+
+//addEventListener() Registra un evento a un objeto en específico.
+let tecla = document.getElementById('objEventoTeclado');
 
 function msjEnConsolaKeyboard() {
     console.log('Se disparó un evento de tecaldo');
-    console.log(arguments);
+    console.log(arguments); //Muestra los argumentos del addEventListener
 }
 
-let tecla = document.getElementById('objEventoTeclado');
 tecla.addEventListener("keypress",msjEnConsolaKeyboard);
