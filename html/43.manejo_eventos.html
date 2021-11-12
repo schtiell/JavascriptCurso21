@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo de eventos DOM con Javascript</title>
+    <style>
+        div{
+            border: 2px solid #000000;
+            width: 200px;
+            height: 150px;
+            margin: auto;
+            margin: 20px 30px;
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Manejo de eventos del DOM con Js!!</h1>
@@ -14,7 +24,18 @@
     
     <!-- El evento onclick permite ejecutar una función cuando el elemento es clickeado -->
     <button id="showClock" onclick="mostrarReloj()">Mostrar reloj</button>
-    <button id="stopClock" onclick="stopClockNow()">Detener reloj</button>
+    
+    <!-- El evento se dispara cuando se hace doble clic sobre el elemento html -->
+    <button id="stopClock" ondblclick="stopClockNow()">Detener reloj</button>
+
+    <div onclick="imprimeAlerta()"></div>
+
+    <!-- onfocus ejecuta una funcion cuando el foco está sobre el, es decir cuando está seleccionado -->
+    <!-- onblur ejecuta la funcion cuando el elemento pierde el foco, es decir cuando se clickea en otro elemento -->
+    <input type="text" onfocus="onFocus()" onblur="onBlur()">
+
+    <!-- onmouseout ejecuta la funcion cuando el mouse esta sobre el y sale del mismo -->
+    <input type="text" name="" id="" onmouseout="onMouseOut()">
 
     <script src="../43.manejo_eventos.js"></script>
 </body>

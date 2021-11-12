@@ -11,5 +11,21 @@ function mostrarReloj(){
 
 function stopClockNow (){
     clearInterval(reloj);
-    console.info('Reloj detenido');
+    console.info('Reloj detenido utilizando el evento ondblclick sobre el boton html');
+}
+
+function imprimeAlerta(){
+    alert('Diste clic sobre el div');
+}
+
+function onFocus(){
+    console.log('input con foco');
+}
+
+function onBlur(){
+    console.log('perdí el foco del input');
+}
+
+function onMouseOut(){
+    console.log('El mouse entra y sale del textbox');
 }
