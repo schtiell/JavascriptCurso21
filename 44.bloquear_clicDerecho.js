@@ -6,4 +6,12 @@ document.onmousedown = function (arguments) {
     if (arguments.button === 2){
         alert('Click derecho bloqueado!!');
     }
+
+    // Cuando el clic izquierdo es usado
+    console.log('clic permitido');
+}
+
+document.onmouseup = function () {
+    let selected = window.getSelection().toString();
+    console.log(selected);
 }
