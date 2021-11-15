@@ -1,0 +1,11 @@
+.titulo{
+    color: lawngreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-style: bold;
+}
+
+.pieDePagina{
+    color: red;
+    font-size: 10px;
+}
