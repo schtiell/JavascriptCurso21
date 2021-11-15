@@ -36,6 +36,7 @@ var objeto = document.getElementById('objEvento');
 function msjEnConsola(){
     console.log('Utilizando eventos con id de html y js!!');
     console.log('Se disparó el evento click');
+    console.log(arguments);
 }
 
 objeto.addEventListener("click",msjEnConsola);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloqueando el clic derecho en el navegador</title>
+    
+    <!-- La etiqueta style para indicar que el body debe utilizar el 100% de ancho y alto, utilizado para bloquear el clic derecho en todo el sitio-->
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<!-- El evento oncontextmenu ocurre cuando el usuario hace clic con el botón derecho en un elemento para abrir el menú contextual. -->
+<body oncontextmenu="return false">
+
+    <h1>Bloqueando el clic derecho del sitio</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vero atque ad harum ducimus soluta incidunt perferendis magni. Atque, consequatur obcaecati illo doloremque facilis et! Officia amet autem quisquam exercitationem?</p>
+
+    <p>Magni perspiciatis recusandae corporis voluptatem officia vero quasi exercitationem cupiditate iure laborum perferendis tempore, vitae a molestiae fuga ipsam doloremque. A pariatur veniam atque eius voluptas tempore inventore corporis ipsa.</p>
+
+    <p>Similique hic adipisci, eaque est earum reiciendis possimus expedita eos, rerum itaque esse quis dolor amet. Illum eaque a esse ad quos voluptas voluptatum vel dicta earum dolorum, impedit rem!</p>
+
+    <script src="../44.bloquear_clicDerecho.js"></script>
+
+</body>
+</html>
